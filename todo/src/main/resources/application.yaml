@@ -1,3 +1,24 @@
 spring:
   application:
     name: todo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tododb
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+application:
+  security:
+    jwt:
+      secret-key: "YTM0ZDI3YmU0YjA0ZGUwM2M1Y2YyOWVjZDYwMmVkNjBkZTRlN2M1Zjk..."
+      expiration-ms: 90000
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs
