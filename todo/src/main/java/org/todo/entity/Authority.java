@@ -1,7 +1,9 @@
 package org.todo.entity;
 
+import jakarta.persistence.Embeddable;
 import org.springframework.security.core.GrantedAuthority;
 
+@Embeddable
 public class Authority implements GrantedAuthority {
 
     private String authority;
