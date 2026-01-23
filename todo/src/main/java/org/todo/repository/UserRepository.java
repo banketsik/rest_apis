@@ -16,5 +16,5 @@ public interface UserRepository extends CrudRepository<User, Long> {
             "FROM User u " +
             "JOIN u.authorities a " +
             "WHERE a.authority = 'ROLE_ADMIN'")
-    long countAuthorities();
+    long countAdminUsers();
 }
