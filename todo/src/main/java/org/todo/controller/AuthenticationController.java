@@ -29,11 +29,11 @@ public class AuthenticationController {
         authenticationService.register(registerRequest);
     }
 
-    @Operation(summary = "LOgin a user",
+    @Operation(summary = "Login a user",
             description = "Submit email and password to authenticate user")
     @ResponseStatus(HttpStatus.OK)
     @PostMapping("/login")
     public AuthenticationResponse login(@Valid @RequestBody AuthenticationRequest  authenticationRequest) throws Exception {
-        return authenticationService.authenticate(authenticationRequest);
+        return authenticationService.login(authenticationRequest);
     }
 }

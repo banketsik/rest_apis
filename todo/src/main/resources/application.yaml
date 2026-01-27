@@ -1,8 +1,9 @@
 spring:
   application:
     name: todo
+
   datasource:
-    url: jdbc:postgresql://localhost:5432/tododb
+    url: jdbc:postgresql://localhost:3307/tododb
     username: root
     password: root
     driver-class-name: org.postgresql.Driver
@@ -10,12 +11,13 @@ spring:
     hibernate:
       ddl-auto: update
     open-in-view: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 application:
   security:
     jwt:
       secret-key: "YTM0ZDI3YmU0YjA0ZGUwM2M1Y2YyOWVjZDYwMmVkNjBkZTRlN2M1Zjk..."
-      expiration-ms: 90000
+      expiration-ms: 900000
 
 springdoc:
   swagger-ui:

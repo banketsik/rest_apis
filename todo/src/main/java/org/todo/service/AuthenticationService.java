@@ -6,5 +6,5 @@ import org.todo.response.AuthenticationResponse;
 
 public interface AuthenticationService {
     void register(RegisterRequest registerRequest) throws Exception;
-    AuthenticationResponse authenticate(AuthenticationRequest authenticationRequest);
+    AuthenticationResponse login(AuthenticationRequest authenticationRequest);
 }

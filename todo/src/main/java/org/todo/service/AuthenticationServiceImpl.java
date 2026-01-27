@@ -46,7 +46,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     @Transactional(readOnly = true)
-    public AuthenticationResponse authenticate(AuthenticationRequest authenticationRequest) {
+    public AuthenticationResponse login(AuthenticationRequest authenticationRequest) {
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
                 authenticationRequest.getEmail(),
                 authenticationRequest.getPassword())
