@@ -23,53 +23,34 @@ A clean and extensible Spring Boot REST API designed for managing to-do tasks. T
 ## File Structure
 
 ```
-├───.idea
-├───.mvn
-│   └───wrapper
-├───sql-scripts
-├───src
-│   ├───main
-│   │   ├───java
-│   │   │   └───com
-│   │   │       └───crudapi
-│   │   │           └───springboot
-│   │   │               └───cruddemo
-│   │   │                   ├───controller
-│   │   │                   ├───dao
-│   │   │                   ├───entity
-│   │   │                   └───service
-│   │   └───resources
-│   │       ├───static
-│   │       └───templates
-│   │           └───employees
-│   └───test
-│       └───java
-│           └───com
-│               └───crudapi
-│                   └───springboot
-│                       └───cruddemo
-└───target
-    ├───classes
-    │   ├───com
-    │   │   └───crudapi
-    │   │       └───springboot
-    │   │           └───cruddemo
-    │   │               ├───controller
-    │   │               ├───dao
-    │   │               ├───entity
-    │   │               └───service
-    │   ├───static
-    │   └───templates
-    │       └───employees
-    ├───generated-sources
-    │   └───annotations
-    ├───generated-test-sources
-    │   └───test-annotations
-    └───test-classes
-        └───com
-            └───crudapi
-                └───springboot
-                    └───cruddemo
+📦 todo-api
+├── 📁 src
+│   ├── 📂 main
+│   │   ├── 📂 java
+│   │   │   └── 📦 org.todo
+│   │   │       ├── 📂 config        # Security & application configuration
+│   │   │       ├── 📂 controller    # REST controllers
+│   │   │       ├── 📂 entity        # JPA entities
+│   │   │       ├── 📂 exception     # Global & custom exceptions
+│   │   │       ├── 📂 repository    # Spring Data repositories
+│   │   │       ├── 📂 request       # Request DTOs
+│   │   │       ├── 📂 response      # Response DTOs
+│   │   │       ├── 📂 service       # Business logic
+│   │   │       └── 📂 util          # Utility classes
+│   │   └── 📂 resources
+│   │       ├── 📂 static
+│   │       ├── 📂 templates
+│   │       └── 📄 application.yml
+│   └── 📂 test
+│       └── 📂 java
+│           └── 📦 org.todo
+├── 📁 gradle
+│   └── 📂 wrapper
+├── 📄 build.gradle
+├── 📄 settings.gradle
+├── 📄 gradlew
+├── 📄 gradlew.bat
+└── 📄 README.md
 ```
 
 ## Installation
