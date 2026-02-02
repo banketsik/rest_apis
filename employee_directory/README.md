@@ -28,53 +28,26 @@ A robust Spring Boot REST API designed for managing employee records. This proje
 ## File Structure
 
 ```
-├───.idea
-├───.mvn
-│   └───wrapper
-├───sql-scripts
-├───src
-│   ├───main
-│   │   ├───java
-│   │   │   └───com
-│   │   │       └───crudapi
-│   │   │           └───springboot
-│   │   │               └───cruddemo
-│   │   │                   ├───controller
-│   │   │                   ├───dao
-│   │   │                   ├───entity
-│   │   │                   └───service
-│   │   └───resources
-│   │       ├───static
-│   │       └───templates
-│   │           └───employees
-│   └───test
-│       └───java
-│           └───com
-│               └───crudapi
-│                   └───springboot
-│                       └───cruddemo
-└───target
-    ├───classes
-    │   ├───com
-    │   │   └───crudapi
-    │   │       └───springboot
-    │   │           └───cruddemo
-    │   │               ├───controller
-    │   │               ├───dao
-    │   │               ├───entity
-    │   │               └───service
-    │   ├───static
-    │   └───templates
-    │       └───employees
-    ├───generated-sources
-    │   └───annotations
-    ├───generated-test-sources
-    │   └───test-annotations
-    └───test-classes
-        └───com
-            └───crudapi
-                └───springboot
-                    └───cruddemo
+📦 crud-demo
+├── 📁 src
+│   ├── 📂 main
+│   │   ├── 📂 java
+│   │   │   └── 📦 com.crudapi.springboot.cruddemo
+│   │   │       ├── 📂 controller   # REST controllers
+│   │   │       ├── 📂 dao          # Data access objects
+│   │   │       ├── 📂 entity       # JPA entities
+│   │   │       └── 📂 service      # Business logic
+│   │   └── 📂 resources
+│   │       ├── 📂 static
+│   │       └── 📂 templates
+│   │           └── 📂 employees
+│   └── 📂 test
+│       └── 📂 java
+│           └── 📦 com.crudapi.springboot.cruddemo
+├── 📁 sql-scripts                 # Database initialization / seed scripts
+├── 📁 .mvn/wrapper                 # Maven wrapper
+├── 📄 pom.xml
+└── 📄 README.md
 ```
 
 ## Installation
